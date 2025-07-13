@@ -26,12 +26,41 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    --height: 60px;
+    display: inline-block;
+    padding: 0 20px;
+    min-width: 205px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #fff;
+    background-color: #2E80CE;
+    border: 1px solid #2E80CE;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 /* Phần header */
 .header {
+    padding-top: 30px;
     min-height: 100vh;
     background-color: var(--bg-color);
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Phần logo css thủ công */
 .logo {
     position: relative;
     display: inline-flex;
@@ -75,4 +104,41 @@ a {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+/* Phần navbar */
+.navbar__list {
+    display: flex;
+}
+
+.actions__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #C9D2DA;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+    position: relative;
+    top: -2px;
+    left: -8px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.actions__signup {
+    --height: 44px;
+    min-width: 104px;
+    font-size: 1.6rem;
 }
