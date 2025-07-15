@@ -517,3 +517,44 @@ a {
 .member__control-next-icon {
     rotate: 180deg;
 }
+
+/* Phần install */
+.install {
+    margin-top: 180px;
+}
+
+.install-wrapped {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #2E80CE;
+}
+
+.install__img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.install__body {
+    max-width: 586px;
+}
+
+.install_desc,
+.install__heading {
+    color: #fff;
+}
+
+.install__heading {
+    width: 489px;
+}
+
+.install__download-mobile {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
+}
