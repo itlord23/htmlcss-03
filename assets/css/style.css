@@ -447,6 +447,11 @@ a {
     column-gap: 30px;
 }
 
+/* Phóng to ảnh khi hover vào item */
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+
 .member-item__bg {
     background: #EAF6FF;
     border-radius: 6px;
@@ -461,6 +466,7 @@ a {
     /* width của ảnh nhỏ hoặc lớn hơn kích thước của card nên để max-width */
     height: 290px;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .member-item__name {
