@@ -423,3 +423,91 @@ a {
 .feature__desc {
     margin-bottom: 38px;
 }
+
+/* Phần Member */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-cta {
+    margin-top: 38px;
+}
+
+.member-list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item__bg {
+    background: #EAF6FF;
+    border-radius: 6px;
+    padding-top: 28px;
+    overflow: hidden;
+    /* Nếu ảnh có kích thước lớn hơn bị tràn ra ngoài */
+}
+
+.member-item__img {
+    display: block;
+    max-width: 100%;
+    /* width của ảnh nhỏ hoặc lớn hơn kích thước của card nên để max-width */
+    height: 290px;
+    object-fit: cover;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+    /* 175% */
+    color: #10375C;
+}
+
+.member-item__desc {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+    /* 185.714% */
+    color: #575F66;
+}
+
+.member__control {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #575F66;
+    color: #575F66;
+    background-color: #fff;
+    transition: 0.25s;
+}
+
+.member__control-btn:hover {
+    cursor: pointer;
+    border-color: #2E80CE;
+    color: #fff;
+    background-color: #2E80CE;
+}
+
+.member__control-next-icon {
+    rotate: 180deg;
+}
