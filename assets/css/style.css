@@ -22,6 +22,15 @@ body {
     margin: 0 auto;
 }
 
+/* Kế thừa lại giá trị css từ thẻ cha */
+input,
+select,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 a {
     text-decoration: none;
 }
@@ -141,6 +150,7 @@ a {
 }
 
 .logo__brand {
+    font-family: "Sora", sans-serif;
     display: block;
     color: #fff;
     font-size: 1.8em;
@@ -602,7 +612,7 @@ a {
 .news__list {
     display: flex;
     max-width: 570px;
-    gap: 30px;
+    column-gap: 30px;
 }
 
 .news-item {
@@ -710,4 +720,138 @@ a {
     max-width: 617px;
     margin: 18px auto 38px;
     font-size: 1.6rem;
+}
+
+/* Phần Footer */
+.footer {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 100px;
+    background: #10375C;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+    color: #A9B3BB;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    /* 175% */
+    color: #FFF;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item:hover .footer__link {
+    text-decoration: underline;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    /* 185.714% */
+    color: #A9B3BB;
+    white-space: nowrap;
+}
+
+.footer__item:last-child .footer__link {
+    margin-bottom: 0;
+}
+
+.footer-socials {
+    margin-bottom: 28px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-socials__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2E80CE;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.footer-socials__btn:hover {
+    color: #fff;
+    background: #2E80CE;
+}
+
+.footer__subtitle {
+    margin-bottom: 10px;
+    max-width: 273px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    /* 185.714% */
+    color: #A9B3BB;
+}
+
+.footer-form {
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    padding: 10px;
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color: #fff;
+    background-color: transparent;
+}
+
+.footer-form__input::placeholder {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    /* 185.714% */
+    color: #9CA8B1;
+}
+
+.footer-form__submit {
+    --height: 46px;
+    min-width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Copyright */
+.footer__copyright {
+    padding: 28px 0 42px;
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    /* 185.714% */
+    color: #AAB3BA;
 }
